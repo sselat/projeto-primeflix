@@ -13,13 +13,25 @@ header{
   font-size: 30px;
   cursor: pointer;
   font-weight: bold;
+  transition: .3s;
+}
+
+.logo:hover{
+  filter: brightness(.4);
 }
 
 .favoritos{
   cursor: pointer;
-  background-color: #fff;
-  padding: 5px 14px;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 18px;
   text-decoration: none;
-  color: #000;
-  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+  transition: .3s;
+}
+
+.favoritos:hover{
+  filter: brightness(.4);
 }

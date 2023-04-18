@@ -6,43 +6,83 @@
 }
 
 .lista-filmes{
-  max-width: 800px;
-  margin: 14px auto;
+  max-width: 100vw;
+  height: calc(100vh - 60px);
+  margin:auto;
+  padding: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
+  background-size: contain;
+  overflow: auto;
+  
 }
 
-.lista-filmes article{
-  width: 100%;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 4px;
+.lista-filmes .container-filmes{
+  width: 250px;
+  border-radius: 8px;
+  position: relative;
+  margin: 10px;
 }
 
 .lista-filmes strong {
-  margin-bottom: 14px;
+  height: 40px;
   text-align: center;
-  font-size: 22px;
-  display: block;
+  font-size: 16px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #831117d2;
+  color: #fff;
+  cursor: default;
 }
 
 .lista-filmes img{
-  width: 900px;
-  max-width: 100%;
+  width: 100%;
   max-height: 340px;
-  object-fit: cover;
   display: block;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+  transition: .3s all;
+}
+
+.lista-filmes .container-filmes:hover img{
+  filter: brightness(.3);
 }
 
 .lista-filmes a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
+  position: absolute;
+  top: calc(50% + 25px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
   font-size: 24px;
-  background-color: #116FEB;
+  background-color: transparent;
   color: #fff;
+  text-shadow: 0px 0px 2px black;
   text-decoration: none;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border: 3px solid white;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  box-shadow: 3px 3px 5px black;
+  display: none;
+  transition: .3s all;
+}
+
+.lista-filmes .container-filmes:hover{
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.lista-filmes a:hover{
+  background-color: #ffffff31;
+}
+
+.lista-filmes .container-filmes:hover a{
+  display: block;
 }

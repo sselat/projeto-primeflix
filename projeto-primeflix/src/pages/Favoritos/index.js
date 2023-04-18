@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './favoritos.css'
 import { toast } from 'react-toastify'
+import {FaTrash, FaInfoCircle} from 'react-icons/fa'
 
 function Favoritos() {
   const [filmes, setFilmes] = useState([])
@@ -38,8 +39,8 @@ function Favoritos() {
             <li className='filme' key={item.id}>
               <span>{item.title}</span>
               <div>
-                <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
-                <button onClick={() => excluirFilme(item.id)}>Excluir</button>
+                <Link to={`/filme/${item.id}`}><FaInfoCircle className='info-icon'/></Link>
+                <button onClick={() => excluirFilme(item.id)}><FaTrash className='trash-icon'/></button>
               </div>
             </li>
           )

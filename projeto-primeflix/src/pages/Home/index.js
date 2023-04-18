@@ -19,7 +19,7 @@ function Home() {
         }
       })
 
-      setFilmes(response.data.results.slice(0, 10))
+      setFilmes(response.data.results.slice(0, 12))
       setLoading(false)
     }
 
@@ -41,7 +41,7 @@ function Home() {
               <article className='container-filmes' key={filme.id}>
                 <strong>{filme.title}</strong>
                 <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
-                <Link to={`/filme/${filme.id}`}>Ver mais detalhes</Link>
+                <Link to={`/filme/${filme.id}`}>Detalhes</Link>
               </article>
             )
           })}
