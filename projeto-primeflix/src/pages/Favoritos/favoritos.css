@@ -1,45 +1,54 @@
 .meus-filmes {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+.meus-filmes h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
 }
 
-.meus-filmes h1{
-  margin-bottom: 14px;
+.meus-filmes h3{
+  text-align: center;
+  color: #fff;
 }
 
-.meus-filmes span{
-  font-size: 18px
+.meus-filmes .back-btn{
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #fff;
 }
-
-.meus-filmes ul{
-  width: 400px;
-}
-
-.meus-filmes ul li{
-  list-style: none;
+.filme {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.meus-filmes div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.meus-filmes div a{
-  text-decoration: none;
-  margin-right: 14px;
+.filme span {
+  font-weight: bold;
 }
 
 .meus-filmes button {
   background: none;
   border: none;
   outline: none;
+  margin-left: 10px;
 }
 
 .trash-icon {

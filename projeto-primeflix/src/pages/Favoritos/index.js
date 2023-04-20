@@ -30,6 +30,7 @@ function Favoritos() {
       {filmes.length === 0 &&
         <div>
           <h3>Sem filmes cadastrados!</h3>
+          <Link to={'/'} className='back-btn'>Voltar</Link>
         </div>
       }
 
