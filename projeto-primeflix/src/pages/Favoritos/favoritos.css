@@ -1,7 +1,30 @@
+.meus-filmes-container{
+  background-image: url('../../assets/wallpaper-movie.jpg');
+  background-color: #fafafa;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+.meus-filmes-container::before{
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.466);
+}
 .meus-filmes {
+  position: relative;
   background-color: black;
   border: 2px solid white;
   border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.555);
   padding: 20px;
   max-width: 500px;
   margin: auto;
@@ -21,13 +44,22 @@
 }
 
 .meus-filmes .back-btn{
-  display: inline-block;
+  display: block;
   margin: auto;
-  padding: 5px;
+  width: 100px;
+  padding:10px;
+  margin-top: 10px;
+  text-align: center;
   text-transform: uppercase;
   font-variant: small-caps;
   text-decoration: none;
   color: #fff;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.meus-filmes .back-btn:hover{
+  background-color: rgba(255, 255, 255, 0.178);
 }
 .filme {
   display: flex;
